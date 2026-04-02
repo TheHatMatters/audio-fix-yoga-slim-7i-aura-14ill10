@@ -1,19 +1,17 @@
-# Audio Fix — Lenovo Yoga Slim 7i Aura Edition 14ILL10 (83JX)
+# Speaker Audio Fix on Lenovo Yoga Slim 7i Aura Edition 14ILL10 (83JX)
 
-No sound after boot on Linux? This fixes it.
+Speakers don't play sound after you installed Linux on this Lenovo model? This fixes it.
 
 ## Symptoms
 
-- No audio output after boot (GNOME shows "Dummy Output" or silent devices)
-- YouTube/media plays but no sound
+- No audio output from speakers (GNOME shows "Dummy Output" or silent devices), although bluetooth may function
 - GNOME Sound Settings shows devices but "Test Sound" does nothing or crashes audio entirely
-- Sometimes works after manually restarting PipeWire, but breaks again on next reboot
 
 ## Affected hardware
 
 | Field | Value |
 |---|---|
-| Model | Lenovo Yoga Slim 7i Aura Edition 14ILL10 |
+| Model | Lenovo Yoga Slim 7i Aura Edition 14ILL10|
 | DMI product name | 83JX |
 | Board | LNVNB161216 |
 | Audio chip | Intel Lunar Lake SOF (`sof-audio-pci-intel-lnl`) |
@@ -147,3 +145,5 @@ Then re-run `install.sh` to make sure all fix files are in place.
 If this works (or doesn't) on a different kernel or distro, please open an issue — would be good to know the range of affected configurations.
 
 The real fix is an updated SOF topology matching the kernel ABI. If you want to help upstream: the mismatch is between `intel/sof-ipc4-tplg/sof-lnl-cs42l43-l0-4ch.tplg` (ABI 3:29:1) and the kernel's expected ABI 3:23:1.
+
+*Main contributer for both troubleshooting and documentation was Claude Code.
