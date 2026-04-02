@@ -43,10 +43,12 @@ A secondary issue is a SoundWire race condition: the cs42l43 codec shows as `UNA
 |---|---|
 | Headphones (3.5mm) | ✅ Works |
 | HDMI audio | ✅ Works |
-| Built-in speakers | ❌ Broken (cs35l56-bridge requires DRC — upstream kernel/firmware issue) |
-| Internal microphone | ❌ Broken (DMIC requires DRC — same issue) |
+| Built-in speakers | ⚠️ Requires additional fix (see below)❌ Broken (cs35l56-bridge requires DRC — upstream kernel/firmware issue) |
+| Internal microphone | ⚠️ Requires additional fix (see below) ❌ Broken (DMIC requires DRC — same issue) |
 
-Speakers and the internal mic require the DRC pipeline which is broken by the ABI mismatch. This is an upstream issue that needs a fix in the SOF firmware or kernel topology — nothing we can do locally for those.
+Built-in speakers: Function broken (cs35l56-bridge requires DRC — upstream kernel/firmware issue) 
+Internal microphone: Function Broken (DMIC requires DRC — same issue)
+Both, speakers and the internal mic require the DRC pipeline which is broken by the ABI mismatch. This is an upstream issue that needs a fix in the SOF firmware or kernel topology — nothing we can do locally for those.
 
 ## Install
 
