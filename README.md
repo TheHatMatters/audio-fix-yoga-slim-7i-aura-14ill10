@@ -43,8 +43,8 @@ A secondary issue is a SoundWire race condition: the cs42l43 codec shows as `UNA
 |---|---|
 | Headphones (3.5mm) | ✅ Works |
 | HDMI audio | ✅ Works |
-| Built-in speakers | ⚠️ Requires additional fix (see below)❌ Broken (cs35l56-bridge requires DRC — upstream kernel/firmware issue) |
-| Internal microphone | ⚠️ Requires additional fix (see below) ❌ Broken (DMIC requires DRC — same issue) |
+| Built-in speakers | ⚠️ Requires additional fix (see below)|
+| Internal microphone | ⚠️ Requires additional fix (see below)|
 
 Built-in speakers: Function broken (cs35l56-bridge requires DRC — upstream kernel/firmware issue) 
 Internal microphone: Function Broken (DMIC requires DRC — same issue)
