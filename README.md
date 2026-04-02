@@ -1,4 +1,4 @@
-# Speaker Audio Fix on Lenovo Yoga Slim 7i Aura Edition 14ILL10 (83JX)
+# Speaker Audio Fix for Linux on Lenovo Yoga Slim 7i Aura Edition 14ILL10 (83JX)
 
 Speakers don't play sound after you installed Linux on this Lenovo model? This fixes it.
 
