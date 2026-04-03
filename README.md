@@ -148,4 +148,4 @@ If this works (or doesn't) on a different kernel or distro, please open an issue
 
 The real fix is an updated SOF topology matching the kernel ABI. If you want to help upstream: the mismatch is between `intel/sof-ipc4-tplg/sof-lnl-cs42l43-l0-4ch.tplg` (ABI 3:29:1) and the kernel's expected ABI 3:23:1.
 
-*Troubleshooting done mostly by Claude Code
+Disclaimer: Both, troubleshooting and documentation was done mostly by Claude Code with user supervision.
